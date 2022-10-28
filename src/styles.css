@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
 
+body{
+    background: linear-gradient(0deg, rgba(34,195,150,1) 25%, rgba(45,253,195,1) 80%);
+}
+
 .container{
     height: 100vh;
     display: block;
@@ -34,6 +38,7 @@ input{
     padding: 10px;
     font-size: 15px;
     font-weight: bold;
+    box-shadow: 4px 4px;
 }
 
 .line{
@@ -53,5 +58,10 @@ input{
 
 .answer{
     margin: 10px 0 10px 10px;
-    font-size: 17px;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
 }

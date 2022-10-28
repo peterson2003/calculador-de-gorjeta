@@ -4,15 +4,19 @@ import './styles.css';
 
 function App() {
 
-  const [conta, setConta] = useState('');
+  const [conta, setConta] = useState("");
   const [gorjeta, setGorjeta] = useState(10);
+  
+  const gorjetaUnit = conta * (gorjeta / 100);
+
+  const valorTotal = Number(conta) + Number(gorjetaUnit);
 
   let answerM = document.querySelector('.answer');
 
   answerM.innerHTML = `
-  <p>Sub-total R$ ${conta}</p><br/>
-  <p>Gorjeta (${gorjeta}%): R$ </p><br/>
-  <p><b>Total: R$ </b></p>
+  <p>Sub-total: <b><mark>R$ ${conta}</mark></b></p><br/>
+  <p>Gorjeta (<b>${gorjeta}%</b>): <b><mark>R$ ${gorjetaUnit.toFixed(2)}</mark></b></p><br/>
+  <p class="total">Total: <b><mark>R$ ${valorTotal.toFixed(2)}</mark></b></p>
   `;
 
   const handleInput = (e)=>{
@@ -35,6 +39,7 @@ function App() {
         <input
         type="number"
         className='iConta'
+        placeholder='Insira o valor da conta...'
         value={conta}
         onChange={handleInput}
         />

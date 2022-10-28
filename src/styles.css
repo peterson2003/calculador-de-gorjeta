@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
+.container{
+    height: 100vh;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 2.7rem;
+    margin: 10px 0 10px 10px;
+}
+
+.content{
+    display: column;
+    padding: 10px 0 10px 10px;
+}
+
+.content p{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.iConta{
+    margin-bottom: 15px;
+}
+
+input{
+    width: 325px;
+    height: 40px;
+    border-radius: 6px;
+    outline: none;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.line{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.line div{
+    background-color: #DDD;
+    width: 99%;
+    height: 3px;
+}

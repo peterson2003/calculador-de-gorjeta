@@ -8,7 +8,12 @@ function App() {
   const [gorjeta, setGorjeta] = useState('');
 
   let answer = document.querySelector('.answer');
-  answer.innerHTML = `<p>Sub-total R$ ${conta}</p>`;
+  
+  answer.innerHTML = `
+  <p>Sub-total R$ ${conta}</p><br/>
+  <p>Gorjeta (${gorjeta}%): R$ </p><br/>
+  <p><b>Total: R$ </b></p>
+  `;
 
   const handleInput = (e)=>{
     setConta(e.target.value);

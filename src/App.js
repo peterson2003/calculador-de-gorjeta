@@ -5,11 +5,11 @@ import './styles.css';
 function App() {
 
   const [conta, setConta] = useState('');
-  const [gorjeta, setGorjeta] = useState('');
+  const [gorjeta, setGorjeta] = useState(10);
 
-  let answer = document.querySelector('.answer');
-  
-  answer.innerHTML = `
+  let answerM = document.querySelector('.answer');
+
+  answerM.innerHTML = `
   <p>Sub-total R$ ${conta}</p><br/>
   <p>Gorjeta (${gorjeta}%): R$ </p><br/>
   <p><b>Total: R$ </b></p>

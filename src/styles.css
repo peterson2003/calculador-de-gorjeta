@@ -50,3 +50,8 @@ input{
     width: 99%;
     height: 3px;
 }
+
+.answer{
+    margin: 10px 0 10px 10px;
+    font-size: 17px;
+}

@@ -31,7 +31,7 @@ function App() {
     <div className='container'>
 
       <div className='title'>
-        Calculadora de Gorjeta
+        Calculador de Gorjeta
       </div>
 
       <div className='content'>

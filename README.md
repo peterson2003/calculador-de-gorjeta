@@ -9,6 +9,7 @@ O **Calculador de Gorjeta** é uma aplicação desenvolvida na minha série de e
 
 ![Web 1](readme%20images/Screenshot_2.png)
 
+
 ![Web 2](readme%20images/Screenshot_3.png)
 
 # Tecnologias utilizadas

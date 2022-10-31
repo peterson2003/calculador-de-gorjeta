@@ -4,7 +4,7 @@ import './styles.css';
 
 function App() {
 
-  const [conta, setConta] = useState("");
+  const [conta, setConta] = useState(0);
   const [gorjeta, setGorjeta] = useState(10);
   
   const gorjetaUnit = conta * (gorjeta / 100);

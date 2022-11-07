@@ -13,20 +13,6 @@ function App() {
 
   let answerM = document.querySelector('.answer');
 
-  answerM.innerHTML = `
-  <p>Sub-total: <b><mark>R$ ${conta}</mark></b></p><br/>
-  <p>Gorjeta (<b>${gorjeta}%</b>): <b><mark>R$ ${gorjetaUnit.toFixed(2)}</mark></b></p><br/>
-  <p class="total">Total: <b><mark>R$ ${valorTotal.toFixed(2)}</mark></b></p>
-  `;
-
-  const handleInput = (e)=>{
-    setConta(e.target.value);
-  }
-
-  const handleInputGJT = (e)=>{
-    setGorjeta(e.target.value);
-  }
-
   return (
     <div className='container'>
 
@@ -41,7 +27,7 @@ function App() {
         className='iConta'
         placeholder='Insira o valor da conta...'
         value={conta}
-        onChange={handleInput}
+        onChange={({target})=>{setConta(target.value)}}
         />
 
         <p>Qual a porcentagem da gorjeta?</p>
@@ -49,15 +35,15 @@ function App() {
         type="number"
         className='iGorjeta'
         value={gorjeta}
-        onChange={handleInputGJT}
+        onChange={({target})=>{setGorjeta(target.value)}}
         />
       </div>
 
-      <div className='line'>
-        <div></div>
+      <div className='answer'>
+        <p>Sub-total: <b><mark>R${conta}</mark></b></p>
+        <p>Gorjeta (<b>{`${gorjeta}%`}</b>): <b><mark>R${gorjetaUnit.toFixed(2)}</mark></b></p>
+        <p>Total: <b><mark>R${valorTotal.toFixed(2)}</mark></b></p>
       </div>
-
-      <div className='answer'></div>
 
     </div>
   );

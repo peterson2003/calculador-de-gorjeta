@@ -1,33 +1,51 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
 
 body{
-    background: linear-gradient(0deg, rgba(34,195,150,1) 25%, rgba(45,253,195,1) 80%);
+    background: rgb(39,34,195);
+    background: linear-gradient(0deg, rgba(39,34,195,1) 24%, rgba(45,248,253,1) 100%);
 }
 
 .container{
     height: 100vh;
-    display: block;
     font-family: 'Poppins', sans-serif;
-    display: block;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
 .title{
     font-weight: bold;
-    font-size: 2.7rem;
+    font-size: 3.5rem;
     margin: 0 0 10px 10px;
+    color: #FFF;
+    text-shadow: 3px 3px #000;
 }
 
 .content{
-    display: column;
-    padding: 10px 0 10px 10px;
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 210px;
+    width: 500px;
+    margin-bottom: 15px;
 }
 
 .content p{
-    font-size: 18px;
+    font-size: 19px;
     margin-bottom: 10px;
+    font-weight: bold;
+    color: #FFF;
+    text-shadow: 1.5px 1.5px #000;
 }
 
 .iConta{
@@ -42,22 +60,7 @@ input{
     padding: 10px;
     font-size: 15px;
     font-weight: bold;
-    box-shadow: 4px 4px;
-}
-
-.line{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    margin-bottom: 8px;
-}
-
-.line div{
-    background-color: #DDD;
-    width: 99%;
-    height: 3px;
+    box-shadow: 2.5px 2.5px;
 }
 
 .answer{
@@ -71,8 +74,22 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 mark{
-    background-color: rgba(10,23,55,0.2);
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     border-radius: 6px;
     padding: 4px;
     box-shadow: 2px 2px;
+    color: #FFF;
+    box-shadow: 2px 2px #000;
+}
+
+.answer p{
+    margin-bottom: 20px;
+    font-weight: bold;
+    color:#FFF;
+    text-shadow: 1.5px 1.5px #000;
 }
